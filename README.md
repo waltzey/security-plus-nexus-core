@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# 🛡️ Security+ Nexus Core — SY0-701 Exam Prep
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A complete, gamified study application for the CompTIA Security+ SY0-701 certification exam. Built as part of my cybersecurity career transition.
 
-## Available Scripts
+**🌐 Live App: [sectestprep.netlify.app](https://sectestprep.netlify.app)**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **98 topics** covering all 5 exam domains with plain English analogies + technical detail
+- **103+ quiz questions** with explanations and confidence-based spaced repetition
+- **3 Performance-Based Question (PBQ) simulators** — firewall config, log analysis, incident response
+- **Shadow Exam mode** — harder-than-real practice exams weighted by domain percentage
+- **Gamification** — XP system, 10 ranks from Recruit 🐣 to Security+ Certified 🏆
+- **Hands-on missions** — practical tasks mapped to each topic
+- **Auto-save** — progress persists via localStorage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📊 Domain Coverage
 
-### `npm test`
+| Domain | Weight | Topics | Status |
+|--------|--------|--------|--------|
+| 1. General Security Concepts | 12% | 18 | ✅ Complete |
+| 2. Threats, Vulnerabilities & Mitigations | 22% | 30 | ✅ Complete |
+| 3. Security Architecture | 18% | 17 | ✅ Complete |
+| 4. Security Operations | 28% | 22 | ✅ Complete |
+| 5. Security Program Management | 20% | 11 | ✅ Complete |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Run Locally
 
-### `npm run build`
+```bash
+npx create-react-app nexus-core
+cd nexus-core
+# Replace src/App.js with the JSX file (rename function to App)
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏗️ Architecture
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Decoupled JSON Content Engine** — all content in a single DB object, separated from UI
+- **Modular design** — update content without touching components
+- **React hooks** — useState, useCallback, useMemo for state management
+- **localStorage persistence** — XP, progress, quiz history saved between sessions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📖 Study Strategy
 
-### `npm run eject`
+1. Start with **Domain 4** (28% of exam — biggest chunk)
+2. Then **Domain 2** (22%), **Domain 5** (20%), **Domain 3** (18%), **Domain 1** (12%)
+3. Pair with [Professor Messer's free videos](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) — topic IDs match
+4. Add [Jason Dion's Udemy practice exams](https://www.udemy.com/) for question volume
+5. Target **85%+ on Shadow Exams** before booking the real test
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Built With
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React 18
+- Custom content engine designed from CompTIA SY0-701 exam objectives
+- Built with AI assistance (Claude) for content generation and app development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Part of my journey from Contract Engineer → Cybersecurity Professional*
